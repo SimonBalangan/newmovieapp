@@ -1,46 +1,32 @@
 import MovieNavbar from "./components/Navbar/Navbar";
-import SciFi from "./components/Home/SciFi";
-import Comedy from "./components/Home/Comedy";
-import Horror from "./components/Home/Horror";
-import Thriller from "./components/Home/Thriller";
+import Home from "./components/Movies/Home";
+import SciFi from "./components/Movies/SciFi";
+import Comedy from "./components/Movies/Comedy";
+import Horror from "./components/Movies/Horror";
+import Thriller from "./components/Movies/Thriller";
+import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home/Home";
-import Footer from './components/Home/Footer'
+
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
-
-    //   <>
-      
-    //   <MovieNavbar />
-    //   <div className="container mt-5">
-    //     <Routes>
-    //       <Route path="/" element={<Home />} />
-          
-    //     </Routes>
-    //   </div>
-    // </>
-
-
     <>
     <div className="App">
     <div className='backgroundHome'>
-      
-
       <MovieNavbar/>
-
-      <Home/>
-      <Routes>
-      <Route path='/' element={<Home />}/>
-      <Route path='/comedy' element={<Comedy />}/>
-      <Route path='#horror' element={<Horror />}/>
-      </Routes>
-      
-
-      
-      </div>
-    
-      
+        <div className="container mt-5">
+          <Routes>
+            <Route path='/' element={<Home />}/>
+            <Route path='/comedy' element={<Comedy />}/>
+            <Route path='/horror' element={<Horror />}/>
+            <Route path='/scifi' element={<SciFi />}/>
+            <Route path='/thriller' element={<Thriller />}/>
+          </Routes>
+       <Footer/>
+        </div>
+     
+      </div> 
     </div>
     </>
   );

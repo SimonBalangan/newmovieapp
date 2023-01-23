@@ -3,7 +3,7 @@ import Comedy from './Comedy'
 import Horror from './Horror'
 import SciFi from './SciFi'
 import Thriller from './Thriller'
-import Footer from './Footer'
+import Footer from '../Footer/Footer'
 
 
 
@@ -14,6 +14,7 @@ const Home = () => {
         <Horror/>
         <SciFi/>
         <Thriller/>
+        <Footer/>
         
     </div>
   )
